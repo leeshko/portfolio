@@ -1,122 +1,482 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Portfolio </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dzmitry Lishko</title>
+    <style>
+      :root {
+        --primary-color: #34495e;
+        --secondary-color: #ecf0f1;
+        --accent-color: #1abc9c;
+        --text-color: #2c3e50;
+        --link-hover-color: #16a085;
+        --card-shadow: rgba(0, 0, 0, 0.15);
+      }
 
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: var(--secondary-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
 
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/myphoto.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Dmitri Lishko</strong>.</h1>
-							</header>
-							<p> <strong> This is my portfolio page </strong></p>
-							<a href="#portfolio" class="button large scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</div>
-			</article>
+      header {
+        background: var(--primary-color);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px var(--card-shadow);
+      }
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Projects I made recently.</h2>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/leeshko/Chat-on-socket.io/tree/secondChat" class="image featured"><img src="images/chat.png" alt="" /></a>
-								<h3><a href="https://github.com/leeshko/Chat-on-socket.io/tree/secondChat">Chat-on-socket.io <br /> (Code)</a></h3>
-								<p>Simple chat on socket.io</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://leeshko.github.io/calculator/" class="image featured"><img src="images/calc.png" alt="" /></a>
-								<h3><a href="https://github.com/leeshko/calculator/tree/master">Calculator <br /> (Code)</a></h3>
-								<p>Calculator on Vanilla JS.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://leeshko.github.io/fancy-weather/" class="image featured"><img src="images/fancyWeather.png" alt="" /></a>
-								<h3><a href="https://github.com/leeshko/fancy-weather">fancy Weather (Code)</a></h3>
-								<p>Weather Forecast App for different Cities.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://nagievr-travel-app.netlify.app/" class="image featured"><img src="https://user-images.githubusercontent.com/69458271/115437921-740db380-a215-11eb-8088-66cf3dda7e96.png" alt="" /></a>
-								<h3><a href="https://github.com/leeshko/travel-app">Travel App (Code)</a></h3>
-								<p>App that helps you explore the country.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://rslang-team59-nagievr.netlify.app/" class="image featured"><img src="https://user-images.githubusercontent.com/69458271/115436723-f8f7cd80-a213-11eb-9665-ca8b89296c9d.png" alt="" /></a>
-								<h3><a href="https://github.com/leeshko/rslang/tree/develop">RS Lang (Code)</a></h3>
-								<p>English learning app.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://leeshko.github.io/RainDrops/" class="image featured"><img src="images/raindrops.png" alt="" /></a>
-								<h3><a href="https://github.com/leeshko/RainDrops">Rain Drops (Code)</a></h3>
-								<p>A game that will teach you to count.</p>
-							</article>
-						</div>
-					</div>
-				</div>
-			</article>
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					
-					<div class="row">
-						
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://linkedin.com/in/dmitri-lishko-774973209" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="skype:live:pumpkin_153" class="icon brands fa-skype"><span class="label">Skype</span></a></li>
-								<li><a href="https://github.com/leeshko" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							</ul>
-							<hr />
-							<span>phone No +375297264900</span>	
-							<br/>
-							 <span><a style="text-decoration: none; color: #999;" href="mailto:dmitrilishko@gmail.com">e-mail: dmitrilishko@gmail.com</a></span>
-						</div>
-					</div>
-				
-				</div>
-			</article>
+      nav {
+        margin-top: 10px;
+      }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        transition: opacity 0.3s ease;
+      }
 
-	</body>
+      nav a:hover {
+        opacity: 0.8;
+      }
+
+      section {
+        padding: 0px 20px 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: var(--primary-color);
+        text-align: center;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .project {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px var(--card-shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .project img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .project-info {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .project-info h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+
+      .project-info p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        color: #7f8c8d;
+      }
+
+      .project-info a {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: white;
+        background: var(--accent-color);
+        transition: background 0.3s ease;
+      }
+
+      .project-info a:hover {
+        background: var(--link-hover-color);
+      }
+
+      #contact {
+        background: white;
+        padding: 40px 20px;
+        box-shadow: 0 -4px 10px var(--card-shadow);
+      }
+
+      #contact h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+        text-align: center;
+      }
+
+      #contact .social {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      #contact .social li {
+        display: inline;
+      }
+
+      #contact .social a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+
+      #contact .social a:hover {
+        color: var(--accent-color);
+      }
+
+      #contact hr {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid var(--card-shadow);
+      }
+
+      #contact span {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        color: var(--text-color);
+        font-size: 1rem;
+      }
+
+      #contact a {
+        text-decoration: none;
+        color: var(--primary-color);
+      }
+
+      #contact a:hover {
+        color: var(--accent-color);
+      }
+
+      footer {
+        background: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 50px">Portfolio</h1>
+      <h1>Dzmitry Lishko</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Dzmitry, a full-stack JavaScript/TypeScrypt developer with
+        expertise in the MERN stack. I specialize in building scalable and
+        efficient solutions for modern web applications.
+      </p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="images/agent.PNG" alt="AI-agent" />
+          <div class="project-info">
+            <h3>AI-agent</h3>
+            <p>
+              This is an AI agent trained on fictional data that has no
+              connection to reality. Can be easily embedded to the app. Created
+              on Google Cloud Platform using DialogFlow CX
+            </p>
+            <a href="https://github.com/leeshko/AI-agent" target="_blank"
+              >Demo</a
+            >
+            <a href="https://leeshko.github.io/AI-agent/" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://user-images.githubusercontent.com/69458271/115437921-740db380-a215-11eb-8088-66cf3dda7e96.png"
+            alt="Project 2"
+          />
+          <div class="project-info">
+            <h3>Travel App</h3>
+            <p>
+              A small app showcasing information about various travel
+              destinations, including their local time, currency exchange rates,
+              photos, videos, and locations on a map (2021).
+            </p>
+            <a href="https://nagievr-travel-app.netlify.app/" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/travel-app" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/shop.PNG" alt="shop" />
+          <div class="project-info">
+            <h3>Shop App</h3>
+            <p>
+              Store application, which implements login, selection of goods,
+              placing them in the cart, calculation of the amount of goods,
+              interface for payment of goods
+            </p>
+            <a href="https://leeshko.github.io/shop" target="_blank">Demo</a>
+            <a href="https://github.com/leeshko/shop" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/raindrops.png" alt="Project 2" />
+          <div class="project-info">
+            <h3>Rain Drops</h3>
+            <p>
+              A game that will make you count or the whole world will drown.
+              Created on Vanilla JS (2021)
+            </p>
+            <a href="https://leeshko.github.io/RainDrops/" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/RainDrops" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://user-images.githubusercontent.com/69458271/115436723-f8f7cd80-a213-11eb-9665-ca8b89296c9d.png"
+            alt="RS Lang"
+          />
+          <div class="project-info">
+            <h3>RS Lang</h3>
+            <p>
+              A textbook for learning English. Contains mini-games to help with
+              this and also keeps a record of progress.
+            </p>
+            <a href="https://rslang-team59-nagievr.netlify.app/" target="_blank"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/leeshko/rslang/tree/develop"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/login.PNG" alt="loginform" />
+          <div class="project-info">
+            <h3>Login form</h3>
+            <p>
+              App demonstrates login page UPD: DB is not connected. Mongoose
+              does not currently support Next.js Edge Runtime.
+            </p>
+            <a href="https://auth0-next-app.vercel.app/login" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/auth0-next-app" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/form.PNG" alt="Form" />
+          <div class="project-info">
+            <h3>Forms management</h3>
+            <p>
+              A form that is made using different libraries (Formik, RHF, Final
+              Form etc) to compare performance and ease of use during RnD.
+            </p>
+            <a href="https://leeshko.github.io/RnD-formik/" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/RnD-formik" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="./images/calc.png" alt="Calculator" />
+          <div class="project-info">
+            <h3>Calculator on Vanilla JS.</h3>
+            <p>
+              Simple calculator, created on Vanilla JS, which allows to make
+              basic operations, nothing to add.
+            </p>
+            <p></p>
+            <a href="https://leeshko.github.io/calculator/" target="_blank"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/leeshko/calculator/tree/master"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/amongus.PNG" alt="carousel" />
+          <div class="project-info">
+            <h3>Image carousel</h3>
+            <p>
+              A simple carousel of pictures like Instagram, made in Vanilla JS
+              without using any libraries.
+            </p>
+            <a href="https://leeshko.github.io/carousel/" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/carousel" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/canvas.PNG" alt="canvas" />
+          <div class="project-info">
+            <h3>Fun-with-Canvas</h3>
+            <p>A tool for drawing fun shapes on the screen.</p>
+            <a
+              href="https://leeshko.github.io/Fun-with-HTML5-Canvas/"
+              target="_blank"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/leeshko/Fun-with-HTML5-Canvas"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/whack.PNG" alt="canvas" />
+          <div class="project-info">
+            <h3>Whack-A-Mole</h3>
+            <p>
+              A simple game in which you have to bash the heads of cheerful
+              moles.
+            </p>
+            <a href="https://leeshko.github.io/Whack-A-Mole/" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/Whack-A-Mole" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/player2.PNG" alt="player" />
+          <div class="project-info">
+            <h3>Video-Speed-Controller</h3>
+            <p>A custom player, which allows to change playback speed, etc.</p>
+            <a
+              href="https://leeshko.github.io/Custom-Video-Player/"
+              target="_blank"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/leeshko/Custom-Video-Player"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/drum.PNG" alt="drum" />
+          <div class="project-info">
+            <h3>Drum Kit</h3>
+            <p>Your oun drums on the screen.</p>
+            <a href="https://leeshko.github.io/Drum-Kit/" target="_blank"
+              >Demo</a
+            >
+            <a href="https://github.com/leeshko/Drum-Kit" target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <article id="contact" class="wrapper style4">
+      <div class="container medium">
+        <h3>Find me on...</h3>
+        <ul class="social">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dzmitry-lishko-774973209/"
+              class="icon brands fa-linkedin-in"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/leeshko" class="icon brands fa-github"
+              >Github</a
+            >
+          </li>
+        </ul>
+        <hr />
+        <span>Phone No: +1 (403) 408-6717</span>
+        <span>
+          <a href="mailto:dmitrilishko@gmail.com"
+            >Email: dmitrilishko@gmail.com</a
+          >
+        </span>
+      </div>
+    </article>
+    <footer>
+      <p>© 2024 Dzmitry.</p>
+    </footer>
+  </body>
 </html>
